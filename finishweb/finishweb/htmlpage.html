@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Yiğit Selçuk</title>
+    <link rel="shortcut icon" href="EVLJtGYUUAAOT9l.jpg" />
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+        body {
+            font-family: 'Poppins',sans-serif;
+            background-color: rgb(72, 65, 65);
+            background-size: 100%100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        header {
+            height: 100px;
+            border-bottom: 2px solid rgba(255,255,255,0.7)
+        }
+
+        nav ul li :hover {
+            transition: 0.7s ease;
+        }
+
+        .menu ul li:hover {
+            margin-top: -1px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+            header nav .logo a {
+                color: white;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            column-gap: 30px;
+        }
+
+            nav ul a {
+                color: white;
+                transition: color .25s ease;
+            }
+
+            nav ul li a:hover {
+                color: white;
+            }
+
+            nav ul li:hover {
+                border-bottom: 1.5px solid rgba(255,255,255,0.7)
+            }
+
+
+
+        @media screen and (max-width:768px) {
+
+            .container {
+                width: 100%;
+                padding-left: 12px;
+                padding-right: 12px;
+                font-size: 10px
+            }
+
+            .content {
+                padding-top: 50px;
+            }
+
+                .content h1 {
+                    font-size: 36px;
+                }
+
+                .content p {
+                    font-size: 16px;
+                }
+
+                .content .links a {
+                    padding: 14px;
+                    width: 90px;
+                }
+
+                .content .links {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 1rem;
+                }
+        }
+
+
+        .menu ul {
+            column-gap: 20px;
+        }
+
+        .content {
+            color: white;
+            height: calc(100vh-100px);
+            padding-top: 120px;
+        }
+
+            .content h1 {
+                font-size: 50px;
+                text-align: center;
+                margin-top: 20px
+            }
+
+            .content p {
+                font-size: 24px;
+                text-align: center;
+                margin-top: 32px;
+            }
+
+            .content .links {
+                display: flex;
+                justify-content: center;
+                margin-top: 48px;
+                column-gap: 16px;
+            }
+
+                .content .links a {
+                    background-color: white;
+                    padding: 20px;
+                    width: 280px;
+                    color: black;
+                    text-align: center;
+                    font-size: 18px;
+                    border-radius: 56px;
+                    transition: all .25s ease-in;
+                }
+
+                    .content .links a:hover {
+                        background-color: rgb(249, 105, 105);
+                        transition: all 1s ease;
+                    }
+
+
+        .social-media {
+            position: absolute;
+            margin-top: 5%;
+            margin-left: 550px;
+        }
+
+            .social-media div {
+                display: inline;
+                color: white;
+                display: inline-flex;
+                margin: 15px;
+                width: 60px;
+                height: 50px;
+                font-size: 40px;
+            }
+
+                .social-media div:hover {
+                    background-color: springgreen;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.7s all
+                }
+
+
+                .social-media div:hover {
+                    transform: scale(1)rotate(360deg);
+                    transition: 1.6s all;
+                }
+
+            .social-media .twitter:hover {
+                background-color: #1da1f2;
+            }
+
+            .social-media .google:hover {
+                background-color: #d34c3d;
+            }
+
+            .social-media .instagram:hover {
+                background-color: #b23b95
+            }
+
+            .social-media .facebook:hover {
+                background-color: #4267b2
+            }
+
+        .barlar p {
+            font-size: 14.5px;
+            margin-top: 22px;
+            margin-left: 10px
+        }
+
+        .barlar h1 {
+            margin-top: 12px;
+        }
+
+
+
+
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: white;
+            border-left: 1px solid #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #7d7d7d;
+            border-radius: 15px
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: #7d7d7d;
+            }
+
+
+        .content .h1 {
+            padding: 12px;
+            font-size: 49px;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .rainbow-box1 {
+            display: flex;
+            background: linear-gradient(60deg, #f79534, #f37056, #ef4e8b, #a167ab, #5073b9, #1099ad, #07b38b, #6fba93);
+            padding: 4px;
+            border-radius: 30px;
+            width: 400px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 400px;
+            margin-top: 200px;
+            margin-left: 80px;
+        }
+
+        .rainbow-content1 {
+            background-color: rgb(72, 65, 65);
+            box-shadow: 0 0 0 3px rgba(255,255,255,.3);
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 26px;
+            height: 392px;
+        }
+
+        .rainbow-box2 {
+            display: flex;
+            background: linear-gradient(60deg, #f79534, #f37056, #ef4e8b, #a167ab, #5073b9, #1099ad, #07b38b, #6fba93);
+            padding: 4px;
+            border-radius: 30px;
+            width: 400px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 400px;
+            margin-left: 570px;
+            margin-top: -400px;
+        }
+
+        .rainbow-content2 {
+            background-color: rgb(72, 65, 65);
+            box-shadow: 0 0 0 3px rgba(255,255,255,.3);
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 26px;
+            height: 392px;
+        }
+
+        .rainbow-box3 {
+            display: flex;
+            background: linear-gradient(60deg, #f79534, #f37056, #ef4e8b, #a167ab, #5073b9, #1099ad, #07b38b, #6fba93);
+            padding: 4px;
+            border-radius: 30px;
+            width: 400px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 400px;
+            margin-top: -400px;
+            margin-left: 1050px;
+        }
+
+        .rainbow-content3 {
+            background-color: rgb(72, 65, 65);
+            box-shadow: 0 0 0 3px rgba(255,255,255,.3);
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 26px;
+            height: 392px;
+        }
+
+            .barlar .rainbow-content1:hover,
+            .rainbow-content2:hover, .rainbow-content3:hover {
+                background-color: rgb(250, 50, 50);
+                position: relative;
+                z-index: auto;
+                transition: 1s all;
+                transform: scale(1.1);
+            }
+
+        @media(max-width:1040px) {
+            .social-media {
+                width: 100%;
+                margin-left: 12px;
+                margin-right: 12px;
+            }
+        }
+
+        @media(max-width:1156px) {
+            .content .h1 {
+                width: 100%;
+                margin-right: 100px;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+
+
+            <div class="logo">
+                <a style="color: #2cc0b9" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">Y</a>
+                <a style="color:#00bfcb" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">
+                    İ</astyle="color:>
+                    <a style="color: #00bfd3" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">
+                        Ğ</astyle="color:>
+                        <a style="color:#16bce2" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">İ</a>
+                        <a style="color:#3fb9ed " a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">T</a>
+                        &nbsp;
+                        <a style="color:#84aef3" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">S</a>
+                        <a style="color: #a1a8ef" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">E</a>
+                        <a style="color:#bba1e6" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">L</a>
+                        <a style="color:#c69de0" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">Ç</a>
+                        <a style="color:#d998d1" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">U</a>
+                        <a style="color:#ec92b7" a href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishweb/finishweb/htmlpage.html">K</a>
+            </div>
+
+            <div class="menu">
+                <ul>
+
+                    <li class="home">
+                        <a style="color:  white; text-shadow: 0 0 5px #ffff34; 0 0 15px #ffff34;" href="file:///C:/Users/inthe/OneDrive/Masa%C3%BCst%C3%BC/Projects/finishweb/finishweb/htmlpage.html">H</a>
+                        <a style="color:  white; text-shadow: 0 0 5px #ffff34; 0 0 15px #ffff34;" href="file:///C:/Users/inthe/OneDrive/Masa%C3%BCst%C3%BC/Projects/finishweb/finishweb/htmlpage.html">o</a>
+                        <a style="color:  white; text-shadow: 0 0 5px #ffff34; 0 0 15px #ffff34; " href="file:///C:/Users/inthe/OneDrive/Masa%C3%BCst%C3%BC/Projects/finishweb/finishweb/htmlpage.html">m</a>
+                        <a style="color: white; text-shadow: 0 0 5px #ffff34; 0 0 15px #ffff34;" href="file:///C:/Users/inthe/OneDrive/Masa%C3%BCst%C3%BC/Projects/finishweb/finishweb/htmlpage.html">e</a>
+                    </li>
+                    <li class="about">
+                        <a style="color: #00b3ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebabout/finishwebabout/htmlpage.html">A</a>
+                        <a style="color: #45adff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebabout/finishwebabout/htmlpage.html">b</a>
+                        <a style="color: #79a7ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebabout/finishwebabout/htmlpage.html">o</a>
+                        <a style="color: #9ca0ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebabout/finishwebabout/htmlpage.html">u</a>
+                        <a style="color: #b898ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebabout/finishwebabout/htmlpage.html">t</a>
+
+                    </li>
+                    <li class="contact">
+                        <a style="color: #00b3ff " href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">C</a>
+                        <a style="color: #45adff " href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">o</a>
+                        <a style="color: #79a7ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">n</a>
+                        <a style="color: #9ca0ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">t</a>
+                        <a style="color: #b898ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">a</a>
+                        <a style="color: #d090ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">c</a>
+                        <a style="color:#e589ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebcontact/finishwebcontact/htmlpage.html?#">t</a>
+                    </li>
+                    <li class="projects">
+                        <a style="color: #00b3ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">P</a>
+                        <a style="color: #45adff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">r</a>
+                        <a style="color: #79a7ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">o</a>
+                        <a style="color: #9ca0ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">j</a>
+                        <a style="color: #b898ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">e</a>
+                        <a style="color: #d090ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">c</a>
+                        <a style="color: #e589ff" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">t</a>
+                        <a style="color: #f681f6" href="file:///C:/Users/yigit/Desktop/Visual%20Studio/finishwebprojects/finishwebprojects/htmlpage.html">s</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+    </div>
+
+
+    <section class="container content">
+        <div class="h1">
+            <a style="color: #ff9aae;"><strong>W</strong></a>
+            <a style="color: #ff92b3"><strong>e</strong></a>
+            <a style="color: #ff8ab9"><strong>l</strong></a>
+            <a style="color: #ff81bf"><strong>c</strong></a>
+            <a style="color: #ff79c4"><strong>o</strong></a>
+            <a style="color: #f671ca"><strong>m</strong></a>
+            <a style="color: #e76ad0"><strong>e</strong></a>
+            &nbsp;
+            <a style="color: #d564d6 "><strong>T</strong></a>
+            <a style="color: #c161dd "><strong>o</strong></a>
+            &nbsp;
+            <a style="color: #a960e3"><strong>M</strong></a>
+            <a style="color: #8e61ea"><strong>y</strong></a>
+            &nbsp;
+            <a style="color: #6b63f0"><strong>B</strong></a>
+            <a style="color: #6b63f0 "><strong>l</strong></a>
+            <a style="color: #3366f5"><strong>o</strong></a>
+            <a style="color: #3366f5"><strong>g</strong></a>
+        </div>
+        <p>
+            Welcome to my personal blog we are learning HTML on this blog we would love for you to join us
+        </p>
+        <div class="links">
+            <a href="#">Learn More</a>
+            <a href="https://www.instagram.com/yigitselcuk._/" target="_blank">Join Us</a>
+        </div>
+
+    </section>
+
+    <div class="social-media">
+        <div class="instagram">
+            <a href="https://www.instagram.com/yigitselcuk._"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="twitter">
+            <a href="https://twitter.com/YiitSeluk9"><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+        <div class="facebook">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+
+        </div>
+        <div class="google">
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+
+
+        </div>
+        <div class="gmail">
+
+            <a style="margin-top:-2px" href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+    </div>
+    <div class="barlar">
+        <div class="rainbow-box1">
+            <div class="rainbow-content1">
+                <h1 style="text-align:center;color:white">NEWS</h1>
+                <p style="color:white">
+                    Elon Musk has been warned he must protect Twitter users from harmful content after he struck a $44bn deal to buy the social media giant.
+
+                    The billionaire vowed to relax content restrictions, sparking fears from human rights groups it could lead to a rise in bullying and misinformation.
+
+                    "Regardless of ownership, all social media platforms must be responsible,"
+                </p>
+            </div>
+        </div>
+
+
+        <div class="rainbow-box2">
+            <div class="rainbow-content2">
+                <h1 style="text-align: center; color: white">DAİLY</h1>
+                <p style="color:white">
+                    When I look at this page in the future, I will remember the days I went through and celebrate my happiness with my coffee in my boss chair.
+                    Never lose your self-confidence, there is nothing you can't achieve, believe in yourself, don't try to show your strength to people, it will be enough to see for yourself, let them see you as an idiot, don't worry about it, of course you will succeed one day and good days will be waiting for you
+                </p>
+
+
+            </div>
+        </div>
+
+        <div class="rainbow-box3">
+            <div class="rainbow-content3">
+                <h1 style="text-align: center; color: white">CODE</h1>
+                <p style="color:white">
+                    When I look at this page in the future, I will remember the days I went through and celebrate my happiness with my coffee in my boss chair.
+                    Never lose your self-confidence, there is nothing you can't achieve, believe in yourself, don't try to show your strength to people, it will be enough to see for yourself, let them see you as an idiot, don't worry about it, of course you will succeed one day and good days will be waiting for you
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let x, y = 5, 5;
+        if (x === y) {
+            let z = x + y;
+
+        }
+        else {
+
+        }
+
+    </script>
+
+</body>
+</html>
